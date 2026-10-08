@@ -1,0 +1,21 @@
+# Compiled files
+/target/
+*.class
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# IDE settings
+.idea/
+*.iml
+.vscode/
+
+# Local database files
+/data/
+*.mv.db
+*.trace.db
+
+# Operating system files
+.DS_Store
+Thumbs.db
