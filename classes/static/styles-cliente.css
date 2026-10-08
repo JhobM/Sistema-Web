@@ -1,0 +1,125 @@
+/* Estilo propio para la interfaz del cliente */
+.cliente-layout {
+    width: 100%;
+    align-items: stretch;
+    background: #f4f7f7;
+}
+
+.cliente-layout > aside {
+    flex: 0 0 250px;
+    width: 250px;
+    padding: 26px 16px;
+    background: linear-gradient(180deg, #17464b, #102f35);
+    box-shadow: 4px 0 18px #153b3b20;
+}
+
+.cliente-layout > aside h2 {
+    margin: 0 0 22px;
+    color: #fff;
+    font-size: 22px;
+}
+
+.cliente-layout > aside a {
+    margin: 6px 0;
+    padding: 11px 12px;
+    border-left: 3px solid transparent;
+    color: #d9e9e8;
+    transition: background .2s, color .2s, border-color .2s;
+}
+
+.cliente-layout > aside a:hover {
+    border-left-color: #70d2bd;
+    background: #ffffff18;
+    color: #fff;
+}
+
+.cliente-content {
+    display: flex;
+    flex: 1;
+    min-width: 0;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.cliente-content > header {
+    width: 100%;
+    border-bottom: 1px solid #e1e9e8;
+    background: #fff;
+    color: #173d42;
+    text-align: left;
+}
+
+.cliente-content > main {
+    flex: 1;
+    width: 100%;
+    min-height: 0;
+    padding: 32px;
+    background: #f4f7f7;
+}
+
+.cliente-content > main > h1 {
+    margin-top: 0;
+    color: #173d42;
+}
+
+.cliente-content > main > form {
+    width: 100%;
+    max-width: 760px;
+    margin: 20px auto;
+    padding: 26px;
+    border: 1px solid #e1e9e8;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 6px 20px #163b3b0d;
+}
+
+.cliente-content section {
+    border-color: #e1e9e8;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px #163b3b0a;
+}
+
+.cliente-content button,
+.cliente-content .boton {
+    background: #23857f;
+}
+
+.cliente-content button:hover,
+.cliente-content .boton:hover {
+    background: #176e69;
+}
+
+.cliente-content > main > table {
+    overflow: hidden;
+    border: 1px solid #e1e9e8;
+    border-radius: 10px;
+}
+
+@media (max-width: 720px) {
+    .cliente-layout > aside {
+        flex-basis: auto;
+        width: 100%;
+        padding: 18px 14px;
+    }
+
+    .cliente-layout > aside h2 {
+        margin-bottom: 10px;
+    }
+
+    .cliente-layout > aside a {
+        display: inline-block;
+        margin: 3px;
+    }
+
+    .cliente-content {
+        min-height: auto;
+    }
+
+    .cliente-content > main {
+        padding: 20px 16px;
+    }
+
+    .cliente-content > main > form {
+        padding: 20px;
+    }
+}
